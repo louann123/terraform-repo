@@ -1,0 +1,23 @@
+
+
+resource "aws_instance" "terraform_demo3" {
+    ami = var.ami
+    instance_type = var.instance_type
+
+    key_name = var.keypair
+
+    tags = {
+    Name = "kodjo"
+    ENV  = "dev"
+}
+
+}
+
+
+
+
+
+
+
+
+
